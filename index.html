@@ -3,56 +3,114 @@
 <head>
   <meta name="generator" content="Hugo 0.92.2" />
   <title>Portfolio</title>
-  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+
+  <!-- Your existing stylesheet (keep this if it’s in your repo) -->
   <link rel="stylesheet" href="/css/style.css" />
+
+  <!-- Minimal helpers for Animals 4:5 + responsive grid -->
+  <style>
+    /* 4:5 “Instagram slide” container — used only in Animals pairs */
+    .insta-45 {
+      position: relative;
+      width: 100%;
+      aspect-ratio: 4 / 5;
+      overflow: hidden;
+      background: #000;
+      border-radius: 8px;
+    }
+    .insta-45 video,
+    .insta-45 img {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover; /* crop edges instead of stretching */
+      display: block;
+    }
+
+    /* 3-column grid that collapses on smaller screens */
+    .grid-3 {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 24px;
+      align-items: start;
+    }
+    @media (max-width: 1024px) { .grid-3 { grid-template-columns: repeat(2, 1fr); } }
+    @media (max-width: 640px)  { .grid-3 { grid-template-columns: 1fr; } }
+
+    .pair { text-align: center; }
+    .caption { font-style: italic; color: #888; margin-top: 8px; }
+
+    .intro { text-align: center; margin-top: 40px; }
+    h2 { text-align: center; margin: 24px 0; }
+    .section { margin: 40px 0; }
+  </style>
 </head>
 <body>
   <div class="container">
+    <!-- Header (minimal) -->
     <header class="header">
       <span class="header__inner">
         <a href="https://niyaznurbhasha.github.io/" class="logo" style="text-decoration: none;">
-          <span class="logo__mark">
-            <svg xmlns="http://www.w3.org/2000/svg" class="greater-icon" viewBox="0 0 44 44">
-              <path fill="none" d="M15 8l14.729 14.382L15 35.367" />
-            </svg>
-          </span>
           <span class="logo__text">Animations</span>
-          <span class="logo__cursor"></span>
         </a>
       </span>
     </header>
 
     <div class="content">
-      <div style="text-align: center; margin-top: 40px;">
+      <!-- Intro -->
+      <div class="intro">
         <p>I’m passionate about creating fully animated 3D scenes, covering everything from 3D character and environment creation to full-body animations to audio design.</p>
       </div>
 
-      <h2 style="text-align:center;">Animals</h2>
-      <div style="display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:24px; align-items:start;">
-        <div style="text-align:center;">
-          <video controls style="width:100%; aspect-ratio:16/9; display:block; object-fit:cover;">
-            <source src="/videos/bird.mp4" type="video/mp4">
-          </video>
-          <img src="/videos/bird_process.png" alt="Animals 1" style="width:100%; display:block; margin-top:8px; aspect-ratio:16/9; object-fit:cover;">
-          <p style="font-style:italic; color:#888; margin-top:6px;">Animals 1 caption</p>
+      <!-- ANIMALS (3 pairs: video + image, each forced to 4:5) -->
+      <h2>Animals</h2>
+      <div class="section grid-3">
+
+        <!-- Pair 1 -->
+        <div class="pair">
+          <div class="insta-45">
+            <video controls>
+              <source src="/videos/bird.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div class="insta-45" style="margin-top:8px;">
+            <img src="/videos/bird_process.png" alt="Animals 1">
+          </div>
+          <p class="caption">Animals 1 caption</p>
         </div>
-        <div style="text-align:center;">
-          <video controls style="width:100%; aspect-ratio:16/9; display:block; object-fit:cover;">
-            <source src="/videos/spider.mp4" type="video/mp4">
-          </video>
-          <img src="/videos/spider_process.png" alt="Animals 2" style="width:100%; display:block; margin-top:8px; aspect-ratio:16/9; object-fit:cover;">
-          <p style="font-style:italic; color:#888; margin-top:6px;">Animals 2 caption</p>
+
+        <!-- Pair 2 -->
+        <div class="pair">
+          <div class="insta-45">
+            <video controls>
+              <source src="/videos/spider.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div class="insta-45" style="margin-top:8px;">
+            <img src="/videos/spider_process.png" alt="Animals 2">
+          </div>
+          <p class="caption">Animals 2 caption</p>
         </div>
-        <div style="text-align:center;">
-          <video controls style="width:100%; aspect-ratio:16/9; display:block; object-fit:cover;">
-            <source src="/videos/gator.mp4" type="video/mp4">
-          </video>
-          <img src="/videos/gator_process.png" alt="Animals 3" style="width:100%; display:block; margin-top:8px; aspect-ratio:16/9; object-fit:cover;">
-          <p style="font-style:italic; color:#888; margin-top:6px;">Animals 3 caption</p>
+
+        <!-- Pair 3 -->
+        <div class="pair">
+          <div class="insta-45">
+            <video controls>
+              <source src="/videos/gator.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div class="insta-45" style="margin-top:8px;">
+            <img src="/videos/gator_process.png" alt="Animals 3">
+          </div>
+          <p class="caption">Animals 3 caption</p>
         </div>
+
       </div>
 
+      <!-- Single feature clip (unchanged, portrait 1080x1920 style) -->
       <div style="text-align:center; margin-bottom:40px; margin-top:40px;">
         <video width="1080" height="1920" controls style="max-width:100%;">
           <source src="/videos/05_final_trim.mp4" type="video/mp4">
@@ -60,32 +118,38 @@
         <p style="font-style:italic; color:#888;">Crypt:Unknown</p>
       </div>
 
+      <!-- CHARACTERS (unchanged: 4 across, each 9:16) -->
       <h2 style="text-align:center;">Characters</h2>
       <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 20px;">
+
         <div style="width: 22%; text-align:center; margin-bottom:40px;">
           <video controls style="width: 100%; aspect-ratio: 9 / 16; display: block; object-fit: cover;">
             <source src="/videos/01_robot1_crouchToStand_out.mp4" type="video/mp4">
           </video>
           <p style="font-style:italic; color:#888;">Bean</p>
         </div>
+
         <div style="width: 22%; text-align:center; margin-bottom:40px;">
           <video controls style="width: 100%; aspect-ratio: 9 / 16; display: block; object-fit: cover;">
             <source src="/videos/02_slowedRobotScream.mp4" type="video/mp4">
           </video>
           <p style="font-style:italic; color:#888;">Jeremy</p>
         </div>
+
         <div style="width: 22%; text-align:center; margin-bottom:40px;">
           <video controls style="width: 100%; aspect-ratio: 9 / 16; display: block; object-fit: cover;">
             <source src="/videos/03_gasmask_sneaking_out.mp4" type="video/mp4">
           </video>
           <p style="font-style:italic; color:#888;">Sneak 100</p>
         </div>
+
         <div style="width: 22%; text-align:center; margin-bottom:40px;">
           <video controls style="width: 100%; aspect-ratio: 9 / 16; display: block; object-fit: cover;">
             <source src="/videos/04_dunegune_parkour_out.mp4" type="video/mp4">
           </video>
           <p style="font-style:italic; color:#888;">Parkour</p>
         </div>
+
       </div>
     </div>
 
