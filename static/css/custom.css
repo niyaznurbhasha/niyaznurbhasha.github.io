@@ -221,11 +221,17 @@
 }
 
 .home-description p {
-  font-size: 1.4em;
-  font-weight: 700;
-  margin: 0;
-  line-height: 1.6;
-  color: var(--color);
+  font-size: 1.8em !important;
+  font-weight: 700 !important;
+  margin: 0 !important;
+  line-height: 1.6 !important;
+  color: var(--color) !important;
+}
+
+.index-content .home-description p,
+.post-content .home-description p {
+  font-size: 1.8em !important;
+  font-weight: 700 !important;
 }
 
 .home-projects-inline {
@@ -235,13 +241,20 @@
 }
 
 .project-link {
-  font-size: 1.6em;
-  font-weight: 700;
-  color: var(--color);
-  text-decoration: none;
+  font-size: 2em !important;
+  font-weight: 700 !important;
+  color: var(--color) !important;
+  text-decoration: none !important;
   padding: 8px 0;
   border-bottom: 2px solid transparent;
   transition: border-color 0.3s ease;
+}
+
+.index-content .project-link,
+.post-content .project-link,
+.home-top-row .project-link {
+  font-size: 2em !important;
+  font-weight: 700 !important;
 }
 
 .project-link:hover {
@@ -262,17 +275,27 @@
   }
 }
 
+/* Hide logo text */
+.logo__text {
+  font-size: 0 !important;
+  width: 0 !important;
+  overflow: hidden !important;
+  display: none !important;
+}
+
 @media (max-width: 684px) {
   .home-name h1 {
     font-size: 2em;
   }
   
   .home-description p {
-    font-size: 1em;
+    font-size: 1.2em !important;
+    font-weight: 700 !important;
   }
   
   .project-link {
-    font-size: 1.1em;
+    font-size: 1.3em !important;
+    font-weight: 700 !important;
   }
 }
 
