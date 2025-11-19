@@ -1,38 +1,6 @@
-/* Small text at the top, left-aligned */
-.header-info {
-  font-size: 14px;
-  text-align: left;
-  margin-top: 20px;
-  margin-left: 10px;
-}
-
-/* Slightly smaller centered text, flowing left to right */
-.intro-text {
-  font-size: 16px;
-  text-align: center;
-  max-width: 800px;
-  margin: 40px auto;
-  line-height: 1.5;
-}
-
-/* Centered video */
-.video-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-top: 40px;
-}
-
-/* Caption under the video */
-.video-caption {
-  font-size: 14px;
-  text-align: center;
-  margin-top: 8px;
-  font-style: italic;
-  color: #aaa;
-}
-
-/* Full width content */
+/* ============================================
+   LAYOUT & CONTENT WIDTH
+   ============================================ */
 .index-content {
   width: 100% !important;
   max-width: 1600px !important;
@@ -45,71 +13,6 @@
   width: 100% !important;
 }
 
-@media (max-width: 900px) {
-  .index-content {
-    padding: 0 20px;
-  }
-}
-
-/* Animation page video styling */
-.index-content video {
-  max-width: 100%;
-  height: auto;
-  display: block;
-  margin: 0 auto;
-}
-
-.index-content img {
-  max-width: 100%;
-  height: auto;
-  display: block;
-}
-
-/* Ensure animation page content is visible */
-.animation-page .index-content,
-.index-content {
-  width: 100% !important;
-  max-width: 100% !important;
-  padding: 0 40px;
-}
-
-.index-content h2 {
-  margin: 40px 0 20px 0;
-}
-
-.index-content > div {
-  margin-bottom: 40px;
-}
-
-/* Single page content (for animation, fitness-ai, etc.) */
-.post-content {
-  width: 100% !important;
-  max-width: 100% !important;
-  padding: 0 40px !important;
-}
-
-.post-content video {
-  max-width: 100%;
-  height: auto;
-  display: block;
-  margin: 0 auto;
-}
-
-.post-content img {
-  max-width: 100%;
-  height: auto;
-  display: block;
-}
-
-.post-content h2 {
-  margin: 40px 0 20px 0;
-}
-
-.post-content > div {
-  margin-bottom: 40px;
-}
-
-/* Make post container full width but with reasonable max-width for readability */
 .post {
   max-width: 1600px !important;
   width: 100% !important;
@@ -117,80 +20,22 @@
   margin: 0 auto !important;
 }
 
+.post-content {
+  width: 100% !important;
+  max-width: 100% !important;
+  padding: 0 40px !important;
+}
+
 @media (max-width: 900px) {
+  .index-content,
   .post {
-    padding: 20px !important;
+    padding: 0 20px !important;
   }
 }
 
-/* Project tiles for home page */
-.project-tiles {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 40px;
-  max-width: 1400px;
-  margin: 80px auto;
-  padding: 0 40px;
-  width: 100%;
-}
-
-@media (max-width: 1200px) {
-  .project-tiles {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 30px;
-  }
-}
-
-@media (max-width: 684px) {
-  .project-tiles {
-    grid-template-columns: 1fr;
-    gap: 24px;
-    margin: 60px auto;
-    padding: 0 20px;
-  }
-}
-
-.project-tile {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding: 60px 40px;
-  background: var(--background);
-  border: 2px solid var(--border-color);
-  border-radius: 12px;
-  text-decoration: none;
-  color: var(--color);
-  transition: all 0.3s ease;
-  cursor: pointer;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
-  min-height: 200px;
-}
-
-.project-tile:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
-  border-color: var(--color);
-  background: var(--background-secondary);
-}
-
-.project-tile h2 {
-  margin: 0;
-  font-size: 2em;
-  font-weight: 700;
-  color: var(--color);
-  line-height: 1.2;
-  text-decoration: none;
-}
-
-.project-tile .tile-subtitle {
-  margin: 0;
-  font-size: 1.1em;
-  color: var(--color-secondary);
-  line-height: 1.6;
-  font-weight: 400;
-}
-
-/* Home page top row - name, description, projects in one line */
+/* ============================================
+   HOME PAGE LAYOUT
+   ============================================ */
 .home-top-row {
   display: flex;
   align-items: center;
@@ -220,87 +65,12 @@
   min-width: 200px;
 }
 
-.home-description p,
-.home-description p *,
-.index-content .home-description p,
-.post-content .home-description p,
-.content .home-description p,
-.home-top-row .home-description p {
-  font-size: 1.8em !important;
-  font-weight: 700 !important;
-  margin: 0 !important;
-  line-height: 1.6 !important;
-  color: var(--color) !important;
-  font-family: inherit !important;
-}
-
 .home-projects-inline {
   display: flex;
   gap: 30px;
   flex-shrink: 0;
 }
 
-.project-link,
-.project-link *,
-.index-content .project-link,
-.post-content .project-link,
-.home-top-row .project-link,
-.content .project-link,
-.home-projects-inline .project-link,
-.home-projects-inline a {
-  font-size: 2em !important;
-  font-weight: 700 !important;
-  color: var(--color) !important;
-  text-decoration: none !important;
-  padding: 8px 0;
-  border-bottom: 2px solid transparent;
-  transition: border-color 0.3s ease;
-  font-family: inherit !important;
-}
-
-.project-link:hover {
-  border-bottom-color: var(--color);
-}
-
-@media (max-width: 1200px) {
-  .home-top-row {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 20px;
-  }
-  
-  .home-projects-inline {
-    width: 100%;
-    justify-content: flex-start;
-    flex-wrap: wrap;
-  }
-}
-
-/* Hide logo text */
-.logo__text {
-  font-size: 0 !important;
-  width: 0 !important;
-  overflow: hidden !important;
-  display: none !important;
-}
-
-@media (max-width: 684px) {
-  .home-name h1 {
-    font-size: 2em;
-  }
-  
-  .home-description p {
-    font-size: 1.2em !important;
-    font-weight: 700 !important;
-  }
-  
-  .project-link {
-    font-size: 1.3em !important;
-    font-weight: 700 !important;
-  }
-}
-
-/* Home page images section */
 .home-images {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -321,7 +91,42 @@
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
+/* ============================================
+   LOGO
+   ============================================ */
+.logo__text {
+  display: none !important;
+}
+
+/* ============================================
+   PROJECT LINK HOVER
+   ============================================ */
+.project-link:hover {
+  border-bottom-color: var(--color) !important;
+}
+
+/* ============================================
+   RESPONSIVE
+   ============================================ */
+@media (max-width: 1200px) {
+  .home-top-row {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+  }
+  
+  .home-projects-inline {
+    width: 100%;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+  }
+}
+
 @media (max-width: 684px) {
+  .home-name h1 {
+    font-size: 2em;
+  }
+  
   .home-images {
     grid-template-columns: 1fr;
     gap: 30px;
