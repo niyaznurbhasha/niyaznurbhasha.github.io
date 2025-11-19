@@ -16,13 +16,6 @@ draft: false
     </div>
   </div>
   
-  <ul style="max-width: 600px; margin: 40px auto; line-height: 2; font-size: 1.05em;">
-    <li>Extracts daily macros from natural language meal descriptions.</li>
-    <li>Suggests workouts considering injury history and training goals.</li>
-    <li>Uses LLM-style reasoning to adapt plans over time.</li>
-    <li>Simple chat-like interface for interacting with the assistant.</li>
-  </ul>
-  
   <p style="max-width: 600px; margin: 40px auto; line-height: 1.8; font-size: 1.05em; text-align: center;">
     Extracts nutrition and workout information from natural descriptions, Develops understanding of user profile and preferences. Makes recommendations to boost user fitness over time.
   </p>
