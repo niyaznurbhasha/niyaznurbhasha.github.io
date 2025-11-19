@@ -19,9 +19,9 @@ draft: false
 
 <div class="home-images">
   <div class="home-image-left">
-    <img src="/img/me.jpg" alt="Niyaz Nurbhasha" />
+    <img src="/img/me.jpg" alt="" />
   </div>
   <div class="home-image-right">
-    <img src="/img/funny.jpg" alt="Funny picture" />
+    <img src="/img/funny.jpg" alt="" />
   </div>
 </div>

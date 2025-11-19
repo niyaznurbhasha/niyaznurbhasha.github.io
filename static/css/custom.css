@@ -220,18 +220,18 @@
   min-width: 200px;
 }
 
-.home-description p {
+.home-description p,
+.home-description p *,
+.index-content .home-description p,
+.post-content .home-description p,
+.content .home-description p,
+.home-top-row .home-description p {
   font-size: 1.8em !important;
   font-weight: 700 !important;
   margin: 0 !important;
   line-height: 1.6 !important;
   color: var(--color) !important;
-}
-
-.index-content .home-description p,
-.post-content .home-description p {
-  font-size: 1.8em !important;
-  font-weight: 700 !important;
+  font-family: inherit !important;
 }
 
 .home-projects-inline {
@@ -240,7 +240,14 @@
   flex-shrink: 0;
 }
 
-.project-link {
+.project-link,
+.project-link *,
+.index-content .project-link,
+.post-content .project-link,
+.home-top-row .project-link,
+.content .project-link,
+.home-projects-inline .project-link,
+.home-projects-inline a {
   font-size: 2em !important;
   font-weight: 700 !important;
   color: var(--color) !important;
@@ -248,13 +255,7 @@
   padding: 8px 0;
   border-bottom: 2px solid transparent;
   transition: border-color 0.3s ease;
-}
-
-.index-content .project-link,
-.post-content .project-link,
-.home-top-row .project-link {
-  font-size: 2em !important;
-  font-weight: 700 !important;
+  font-family: inherit !important;
 }
 
 .project-link:hover {
