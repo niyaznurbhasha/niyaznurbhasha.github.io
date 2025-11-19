@@ -10,17 +10,14 @@ draft: false
 
 <div class="project-tiles">
   <a href="/animation/" class="project-tile">
-    <h2>Animation</h2>
-    <p class="tile-subtitle">3D character, environment, and camera animation</p>
+    <h2>Animations</h2>
   </a>
   
   <a href="/fitness-ai/" class="project-tile">
-    <h2>Fitness AI</h2>
-    <p class="tile-subtitle">Personalized macros and workout planning</p>
+    <h2>Fitness Agent</h2>
   </a>
   
   <a href="/mental-health-ai/" class="project-tile">
-    <h2>Mental Health AI</h2>
-    <p class="tile-subtitle">Empathetic LLM-based mental health chatbot</p>
+    <h2>Support Bot</h2>
   </a>
 </div>

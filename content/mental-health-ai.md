@@ -1,10 +1,10 @@
 ---
-title: "Mental Health AI"
+title: "Support Bot"
 draft: false
 ---
 
-<div style="max-width: 800px; margin: 0 auto; padding: 40px 20px;">
-  <h1 style="text-align: center; margin-bottom: 30px;">Mental Health AI</h1>
+<div style="max-width: 1600px; margin: 0 auto; padding: 40px 20px;">
+  <h1 style="text-align: center; margin-bottom: 30px;">Support Bot</h1>
   
   <p style="text-align: center; font-size: 1.1em; line-height: 1.8; margin-bottom: 40px;">
     A fine-tuned empathetic chatbot designed for supportive, non-clinical mental health conversations.
@@ -18,7 +18,6 @@ draft: false
   
   <ul style="max-width: 600px; margin: 40px auto; line-height: 2; font-size: 1.05em;">
     <li>Fine-tuned on empathetic dialogue datasets.</li>
-    <li>Prioritizes validation, emotional reflection, and supportive language.</li>
     <li>Avoids clinical diagnosis; focused on listening and gentle guidance.</li>
     <li>Built as a foundation for a future production-grade mental health assistant.</li>
   </ul>

@@ -35,8 +35,9 @@
 /* Full width content */
 .index-content {
   width: 100% !important;
-  max-width: 100% !important;
+  max-width: 1600px !important;
   padding: 0 40px;
+  margin: 0 auto;
 }
 
 .content {
@@ -108,11 +109,18 @@
   margin-bottom: 40px;
 }
 
-/* Make post container full width */
+/* Make post container full width but with reasonable max-width for readability */
 .post {
-  max-width: 100% !important;
+  max-width: 1600px !important;
   width: 100% !important;
-  padding: 20px 0 !important;
+  padding: 20px 40px !important;
+  margin: 0 auto !important;
+}
+
+@media (max-width: 900px) {
+  .post {
+    padding: 20px !important;
+  }
 }
 
 /* Project tiles for home page */
@@ -166,11 +174,12 @@
 }
 
 .project-tile h2 {
-  margin: 0 0 16px 0;
+  margin: 0;
   font-size: 2em;
   font-weight: 700;
   color: var(--color);
   line-height: 1.2;
+  text-decoration: none;
 }
 
 .project-tile .tile-subtitle {

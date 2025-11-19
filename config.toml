@@ -11,7 +11,7 @@ defaultContentLanguage = "en"
 customCSS = ["css/custom.css"]
 
 [params.logo]
-  logoText = "Niyaz Nurbhasha"
+  logoText = ""
   logoHomeLink = "/"
 
 [menu]
@@ -22,17 +22,17 @@ customCSS = ["css/custom.css"]
     weight = 1
   [[menu.main]]
     identifier = "animation"
-    name = "Animation"
+    name = "Animations"
     url = "/animation/"
     weight = 2
   [[menu.main]]
     identifier = "fitness-ai"
-    name = "Fitness AI"
+    name = "Fitness Agent"
     url = "/fitness-ai/"
     weight = 3
   [[menu.main]]
     identifier = "mental-health-ai"
-    name = "Mental Health AI"
+    name = "Support Bot"
     url = "/mental-health-ai/"
     weight = 4
 
