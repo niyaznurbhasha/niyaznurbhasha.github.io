@@ -64,6 +64,57 @@
   display: block;
 }
 
+/* Ensure animation page content is visible */
+.animation-page .index-content,
+.index-content {
+  width: 100% !important;
+  max-width: 100% !important;
+  padding: 0 40px;
+}
+
+.index-content h2 {
+  margin: 40px 0 20px 0;
+}
+
+.index-content > div {
+  margin-bottom: 40px;
+}
+
+/* Single page content (for animation, fitness-ai, etc.) */
+.post-content {
+  width: 100% !important;
+  max-width: 100% !important;
+  padding: 0 40px !important;
+}
+
+.post-content video {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+.post-content img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.post-content h2 {
+  margin: 40px 0 20px 0;
+}
+
+.post-content > div {
+  margin-bottom: 40px;
+}
+
+/* Make post container full width */
+.post {
+  max-width: 100% !important;
+  width: 100% !important;
+  padding: 20px 0 !important;
+}
+
 /* Project tiles for home page */
 .project-tiles {
   display: grid;
