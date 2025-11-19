@@ -67,8 +67,9 @@
 
 .home-projects-inline {
   display: flex;
-  gap: 30px;
+  gap: 50px;
   flex-shrink: 0;
+  margin-left: 40px;
 }
 
 .home-images {
@@ -102,7 +103,7 @@
    PROJECT LINK HOVER
    ============================================ */
 .project-link:hover {
-  border-bottom-color: var(--color) !important;
+  opacity: 0.7 !important;
 }
 
 /* ============================================
