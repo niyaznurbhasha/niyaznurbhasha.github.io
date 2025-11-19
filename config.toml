@@ -1,0 +1,39 @@
+baseURL = "https://niyaznurbhasha.github.io/"  # Or a custom domain later
+languageCode = "en-us"
+title = "Portfolio"
+theme = "hello-friend"
+
+# Some extra recommended configuration options
+paginate = 5
+defaultContentLanguage = "en"
+
+[params]
+customCSS = ["css/custom.css"]
+
+[menu]
+  [[menu.main]]
+    identifier = "home"
+    name = "Home"
+    url = "/"
+    weight = 1
+  [[menu.main]]
+    identifier = "animation"
+    name = "Animation"
+    url = "/animation/"
+    weight = 2
+  [[menu.main]]
+    identifier = "fitness-ai"
+    name = "Fitness AI"
+    url = "/fitness-ai/"
+    weight = 3
+  [[menu.main]]
+    identifier = "mental-health-ai"
+    name = "Mental Health AI"
+    url = "/mental-health-ai/"
+    weight = 4
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+
