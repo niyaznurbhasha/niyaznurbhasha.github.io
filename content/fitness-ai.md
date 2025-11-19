@@ -16,8 +16,10 @@ draft: false
     </div>
   </div>
   
-  <p style="max-width: 600px; margin: 40px auto; line-height: 1.8; font-size: 1.05em; text-align: center;">
-    Extracts nutrition and workout information from natural descriptions, Develops understanding of user profile and preferences. Makes recommendations to boost user fitness over time.
-  </p>
+  <ul style="max-width: 600px; margin: 40px auto; line-height: 2; font-size: 1.05em;">
+    <li>Extracts nutrition and workout information from natural descriptions.</li>
+    <li>Develops understanding of user profile and preferences.</li>
+    <li>Makes recommendations to boost user fitness over time.</li>
+  </ul>
 </div>
 

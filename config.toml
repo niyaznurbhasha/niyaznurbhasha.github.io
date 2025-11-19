@@ -11,7 +11,7 @@ defaultContentLanguage = "en"
 customCSS = ["css/custom.css"]
 
 [params.logo]
-  logoText = "Niyaz Nurbhasha"
+  logoText = ""
   logoHomeLink = "/"
 
 [menu]

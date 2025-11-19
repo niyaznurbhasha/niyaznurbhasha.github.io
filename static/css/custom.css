@@ -221,10 +221,11 @@
 }
 
 .home-description p {
-  font-size: 1.1em;
+  font-size: 1.4em;
+  font-weight: 700;
   margin: 0;
   line-height: 1.6;
-  color: var(--color-secondary);
+  color: var(--color);
 }
 
 .home-projects-inline {
@@ -234,7 +235,7 @@
 }
 
 .project-link {
-  font-size: 1.3em;
+  font-size: 1.6em;
   font-weight: 700;
   color: var(--color);
   text-decoration: none;
