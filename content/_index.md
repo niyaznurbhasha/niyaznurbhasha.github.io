@@ -3,11 +3,9 @@ title: "Home"
 draft: false
 ---
 
-<div style="text-align: center; margin-top: 60px; margin-bottom: 40px;">
-  <h1 style="font-size: 2.5em; margin-bottom: 20px;">Niyaz Nurbhasha</h1>
-  <p style="font-size: 1.2em; max-width: 700px; margin: 0 auto; line-height: 1.6;">
-    Machine learning engineer building systems across animation, fitness, and mental health.
-  </p>
+<div class="home-hero">
+  <h1>Niyaz Nurbhasha</h1>
+  <p>Machine learning engineer building systems across animation, fitness, and mental health.</p>
 </div>
 
 <div class="project-tiles">
