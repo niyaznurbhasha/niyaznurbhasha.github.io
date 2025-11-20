@@ -67,7 +67,7 @@
 
 .home-projects-inline {
   display: flex;
-  gap: 50px;
+  gap: 0;
   flex-shrink: 0;
   margin-left: 40px;
 }

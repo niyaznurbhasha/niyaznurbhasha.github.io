@@ -42,7 +42,6 @@ draft: false
   <video controls style="width:100%; max-height:800px; object-fit:contain;">
     <source src="/videos/post4.mp4" type="video/mp4">
   </video>
-  <p style="font-style:italic; color:#888; margin-top:12px;">Crypt:Uknown</p>
 </div>
 
 
