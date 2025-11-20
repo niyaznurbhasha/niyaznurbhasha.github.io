@@ -48,7 +48,6 @@
 
 .home-projects-inline {
   display: flex;
-  gap: 60px;
   flex-wrap: wrap;
 }
 
@@ -58,7 +57,12 @@
   color: var(--color);
   text-decoration: underline;
   padding: 8px 0;
+  margin-right: 60px;
   transition: opacity 0.3s ease;
+}
+
+.home-projects-inline .project-link:last-child {
+  margin-right: 0;
 }
 
 .home-images {
@@ -108,8 +112,8 @@
     padding: 0 20px;
   }
   
-  .home-projects-inline {
-    gap: 30px;
+  .home-projects-inline .project-link {
+    margin-right: 30px;
   }
 }
 
