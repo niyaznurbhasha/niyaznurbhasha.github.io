@@ -13,17 +13,27 @@
   width: 100% !important;
 }
 
-.post {
+/* Override theme's 800px max-width constraint */
+.post,
+article.post,
+.post:not(:last-of-type) {
   max-width: 1600px !important;
   width: 100% !important;
   padding: 20px 40px !important;
-  margin: 0 auto !important;
+  margin: 20px auto !important;
 }
 
 .post-content {
   width: 100% !important;
   max-width: 100% !important;
   padding: 0 40px !important;
+}
+
+/* Ensure all content divs inside posts are full width */
+.post-content > div,
+.post-content > div > div {
+  max-width: 100% !important;
+  width: 100% !important;
 }
 
 @media (max-width: 900px) {

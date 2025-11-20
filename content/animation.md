@@ -38,16 +38,15 @@ draft: false
 
 
 
-<div style="text-align:center; margin:60px auto; max-width:600px;">
+<div style="text-align:center; margin:30px auto; max-width:600px;">
   <video controls style="width:100%; max-height:800px; object-fit:contain;">
     <source src="/videos/post4.mp4" type="video/mp4">
   </video>
 </div>
 
+<h2 style="text-align:center; margin:30px 0 20px 0;">Characters</h2>
 
-<h2 style="text-align:center;">Characters</h2>
-
-<div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 40px; margin:40px 0 60px 0;">
+<div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 40px; margin:20px 0 20px 0;">
 
   <div style="width: 45%; min-width: 300px; text-align:center;">
     <video controls style="width: 100%; height: auto; min-height: 700px; max-height: 900px; display: block; object-fit: contain;">
