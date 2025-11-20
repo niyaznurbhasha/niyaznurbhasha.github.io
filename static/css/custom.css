@@ -26,32 +26,39 @@
 }
 
 /* Home page layout */
-.home-top-row {
-  display: flex;
-  align-items: center;
-  gap: 40px;
+.home-top-section {
+  max-width: 1600px;
   margin: 60px auto;
   padding: 0 40px;
-  flex-wrap: wrap;
-  max-width: 1600px;
 }
 
 .home-name h1 {
   font-size: 2.5em;
   font-weight: 700;
-  margin: 0;
-  white-space: nowrap;
+  margin: 0 0 20px 0;
 }
 
-.home-description {
-  flex: 1;
-  min-width: 200px;
+.home-description p {
+  font-size: 1.8em;
+  font-weight: 400;
+  margin: 0 0 40px 0;
+  line-height: 1.6;
+  color: var(--color);
 }
 
 .home-projects-inline {
   display: flex;
-  gap: 0;
-  margin-left: 40px;
+  gap: 60px;
+  flex-wrap: wrap;
+}
+
+.home-projects-inline .project-link {
+  font-size: 2em;
+  font-weight: 400;
+  color: var(--color);
+  text-decoration: underline;
+  padding: 8px 0;
+  transition: opacity 0.3s ease;
 }
 
 .home-images {
@@ -96,16 +103,13 @@
 }
 
 /* Responsive */
-@media (max-width: 1200px) {
-  .home-top-row {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 20px;
+@media (max-width: 900px) {
+  .home-top-section {
+    padding: 0 20px;
   }
   
   .home-projects-inline {
-    width: 100%;
-    flex-wrap: wrap;
+    gap: 30px;
   }
 }
 
