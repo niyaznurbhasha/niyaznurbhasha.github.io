@@ -1,72 +1,45 @@
-/* ============================================
-   LAYOUT & CONTENT WIDTH
-   ============================================ */
-.index-content {
-  width: 100% !important;
-  max-width: 1600px !important;
-  padding: 0 40px;
-  margin: 0 auto;
-}
-
-.content {
-  max-width: 100% !important;
-  width: 100% !important;
-}
-
-/* Override theme's 800px max-width constraint */
-.post,
-article.post,
-.post:not(:last-of-type) {
+/* Page width - override theme's 800px constraint */
+.post {
   max-width: 1600px !important;
   width: 100% !important;
   padding: 20px 40px !important;
-  margin: 20px auto !important;
 }
 
 .post-content {
-  width: 100% !important;
   max-width: 100% !important;
   padding: 0 40px !important;
 }
 
-/* Ensure all content divs inside posts are full width */
-.post-content > div,
-.post-content > div > div {
+.index-content {
+  max-width: 1600px !important;
+  padding: 0 40px;
+}
+
+.content {
   max-width: 100% !important;
-  width: 100% !important;
 }
 
 @media (max-width: 900px) {
-  .index-content,
-  .post {
+  .post, .index-content {
     padding: 0 20px !important;
   }
 }
 
-/* ============================================
-   HOME PAGE LAYOUT
-   ============================================ */
+/* Home page layout */
 .home-top-row {
   display: flex;
   align-items: center;
   gap: 40px;
-  margin: 60px 0;
+  margin: 60px auto;
   padding: 0 40px;
   flex-wrap: wrap;
   max-width: 1600px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.home-name {
-  flex-shrink: 0;
 }
 
 .home-name h1 {
   font-size: 2.5em;
   font-weight: 700;
   margin: 0;
-  letter-spacing: -0.02em;
   white-space: nowrap;
 }
 
@@ -78,7 +51,6 @@ article.post,
 .home-projects-inline {
   display: flex;
   gap: 0;
-  flex-shrink: 0;
   margin-left: 40px;
 }
 
@@ -102,23 +74,28 @@ article.post,
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
-/* ============================================
-   LOGO
-   ============================================ */
+.home-image-right {
+  text-align: center;
+}
+
+.home-image-right p {
+  text-align: center;
+  margin-top: 12px;
+  font-style: italic;
+  color: #888;
+}
+
+/* Logo */
 .logo__text {
   display: none !important;
 }
 
-/* ============================================
-   PROJECT LINK HOVER
-   ============================================ */
+/* Project link hover */
 .project-link:hover {
-  opacity: 0.7 !important;
+  opacity: 0.7;
 }
 
-/* ============================================
-   RESPONSIVE
-   ============================================ */
+/* Responsive */
 @media (max-width: 1200px) {
   .home-top-row {
     flex-direction: column;
@@ -128,7 +105,6 @@ article.post,
   
   .home-projects-inline {
     width: 100%;
-    justify-content: flex-start;
     flex-wrap: wrap;
   }
 }
@@ -140,7 +116,6 @@ article.post,
   
   .home-images {
     grid-template-columns: 1fr;
-    gap: 30px;
     padding: 0 20px;
   }
 }

@@ -3,7 +3,7 @@ title: "Support Bot"
 draft: false
 ---
 
-<div style="width: 100%; max-width: 1600px; margin: 0 auto; padding: 40px 40px;">
+<div style="width: 100%; max-width: 1600px; margin: 0 auto; padding: 40px 40px; box-sizing: border-box;">
   <h1 style="text-align: center; margin-bottom: 30px;">Support Bot</h1>
   
   <p style="text-align: center; font-size: 1.1em; line-height: 1.8; margin-bottom: 40px;">

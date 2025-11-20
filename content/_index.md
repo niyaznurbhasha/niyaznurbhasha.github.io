@@ -21,8 +21,8 @@ draft: false
   <div class="home-image-left">
     <img src="/img/me.jpg" alt="" />
   </div>
-  <div class="home-image-right" style="text-align: center;">
+  <div class="home-image-right">
     <img src="/img/funny.png" alt="" />
-    <p style="font-style: italic; color: #888; margin-top: 12px;">Typical LLM Dataset</p>
+    <p>Typical LLM Dataset</p>
   </div>
 </div>
