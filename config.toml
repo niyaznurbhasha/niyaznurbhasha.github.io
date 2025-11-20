@@ -9,6 +9,7 @@ defaultContentLanguage = "en"
 
 [params]
 customCSS = ["css/custom.css"]
+defaultTheme = "dark"
 
 [params.logo]
   logoText = " "
